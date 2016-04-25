@@ -50,6 +50,46 @@ li {
   padding: 2.5em;
 }
 
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-label {
+  cursor: pointer;
+  font-size: 1.25rem;
+  width: 40px;
+  display: inline-block;
+  right: 0;
+  bottom: 0;
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+  width: 100%;
+}
+
+.nav-close {
+  display: none;
+}
+
+  .nav-check:checked ~ .nav-label .nav-open{
+    display: none;
+  }
+
+  .nav-check:checked ~ .nav-label .nav-close{
+    display: block;
+  }
+
+.nav {
+  display: none;
+}
+
+  .nav-check:checked ~ .nav{
+    display: block;
+  }
+
 .img-flex-logo {
   width: 40%;
 }
@@ -93,6 +133,7 @@ li a:hover {
   padding: 1rem;
   border: solid #fff;
   border-radius: 8px;
+  margin-top: 1rem;
 }
 
 .btn:hover {
@@ -160,14 +201,6 @@ h2 {
 }
 
 @media only screen and (min-width: 38em) {
-
-  nav {
-    display: none;
-  }
-
-  .nav-check:checked ~ .nav{
-    display: block;
-  }
 
   body {
     line-height: 1.3;
