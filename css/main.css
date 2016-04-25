@@ -17,6 +17,7 @@ html {
 
 body {
   font-family: "Old Standard TT";
+  margin: 0;
 }
 
 /*NAVIGATION*/
@@ -66,23 +67,40 @@ li a:hover {
 /*BANNER*/
 
 .img-flex {
-  display: block;
   width: 100%;
-  float: right;
-  overflow: hidden;
 }
 
 .banner-text {
-  float: left;
-  width: 100%;
-  display: inline-block;
+  position: absolute;
+  top: 20%;
+  padding-left: 1rem;
+}
+
+.banner {
+  position: relative;
+  background-image: url("../images/placeholder-3by2.svg");
+  min-height: 25rem;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.btn {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border: solid #fff;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #fff;
 }
 
 /*LOCATION*/
 
 .img-location {
-  float: left;
-  width: 50%;
+  width: 100%;
   display: inline-block;
 }
 
@@ -90,34 +108,55 @@ li a:hover {
   display: block;
 }
 
-.location > p {
-  font-size: 90%;
-  padding: 1em;
+strong {
+  display: block;
+  font-size: 225%;
 }
+
 
 /*MENU*/
 
 .img-menu {
-  width: 25%;
+  width: 100%;
   display: inline-block;
 }
 
 h3 {
-  display: inline-block;
+  display: block;
   text-align: center;
+  font-size: 100%;
 }
 
 /*MISSION*/
 
 .img-mission {
-  width: 25%;
+  width: 50%;
   display: block;
+  text-align: center;
+  margin: auto;
 }
 
 .text-mission {
-  width: 25%;
+  width: 100%;
   display: block;
 }
+
+.mission-div {
+  padding: 1em;
+  background-color: #fff;
+}
+.mission {
+  background-color: #e2e2e2;
+  padding: 1.75rem;
+}
+
+h2 {
+  text-align: center;
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0;
+}
+
 @media only screen and (min-width: 38em) {
 
   nav {
@@ -131,6 +170,11 @@ h3 {
   body {
     line-height: 1.3;
     font-size: 110%;
+  }
+
+  .img-menu {
+    width: 100%;
+    display: inline-block;
   }
 
 }
@@ -151,6 +195,35 @@ h3 {
   }
   label {
     display: none;
+  }
+
+  .menu-div {
+    width: 49.5%;
+    display: inline-block;
+  }
+
+  .menu {
+    margin: auto;
+    width: 55rem;
+  }
+
+  .img-mission {
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .text-mission {
+    width: 40%;
+    display: inline-block;
+  }
+
+  .img-location {
+    width: 49%;
+  }
+
+  .location-p {
+    width: 49%;
   }
 
 }
