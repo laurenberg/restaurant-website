@@ -29,6 +29,7 @@ nav {
   width: 100%;
   overflow: hidden;
   margin: 0;
+  position: relative;
 }
 
 a {
@@ -36,18 +37,31 @@ a {
   color: #000;
 }
 
+nav li a:hover {
+  color: #fff;
+}
+
 nav ul {
-    list-style-type: none;
-    float: right;
+  list-style-type: none;
+  float: right;
+  padding: 0;
 }
 
 h1 {
   float: left;
 }
 
-li {
+.head-nav a {
   display: inline-block;
-  padding: 2.5em;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+  background-color: darkgrey;
+  min-width: 25em;
+}
+
+a:hover {
+  background-color: #000;
 }
 
 .nav-check {
@@ -60,8 +74,9 @@ li {
   font-size: 1.25rem;
   width: 40px;
   display: inline-block;
+  position: absolute;
   right: 0;
-  bottom: 0;
+  top: 2.5em;
 }
 
 .nav-open,
@@ -74,13 +89,13 @@ li {
   display: none;
 }
 
-  .nav-check:checked ~ .nav-label .nav-open{
-    display: none;
-  }
+.nav-check:checked ~ .nav-label .nav-open{
+  display: none;
+}
 
-  .nav-check:checked ~ .nav-label .nav-close{
-    display: block;
-  }
+.nav-check:checked ~ .nav-label .nav-close{
+  display: block;
+}
 
 .nav {
   display: none;
@@ -104,6 +119,14 @@ li a:hover {
   float: left;
   width: 20%;
   margin-top: 1.25rem;
+}
+
+footer li {
+  display: inline-block;
+}
+
+footer ul {
+  display: inline-block;
 }
 
 /*BANNER*/
@@ -133,7 +156,7 @@ li a:hover {
   padding: 1rem;
   border: solid #fff;
   border-radius: 8px;
-  margin-top: 1rem;
+  display: inline-block;
 }
 
 .btn:hover {
@@ -200,6 +223,7 @@ h2 {
   margin: 0;
 }
 
+
 @media only screen and (min-width: 38em) {
 
   body {
@@ -228,6 +252,7 @@ h2 {
   .nav-check {
     display: none;
   }
+
   label {
     display: none;
   }
@@ -242,16 +267,16 @@ h2 {
     width: 55rem;
   }
 
-  .img-mission {
-    width: 40%;
+  .mission-div {
+    width: 49%;
+    margin: 0;
     display: inline-block;
-    text-align: center;
+    vertical-align: top;
   }
 
-  .text-mission {
-    width: 40%;
-    display: inline-block;
-  }
+  .mission {
+    background-color: #fff;
+}
 
   .img-location {
     width: 49%;
@@ -259,6 +284,7 @@ h2 {
 
   .location-p {
     width: 49%;
+    display: inline-block;
   }
 
 }
