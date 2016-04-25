@@ -262,11 +262,6 @@ h2 {
     display: inline-block;
   }
 
-  .menu {
-    margin: auto;
-    width: 55rem;
-  }
-
   .mission-div {
     width: 49%;
     margin: 0;
@@ -280,11 +275,13 @@ h2 {
 
   .img-location {
     width: 49%;
+    vertical-align: middle;
   }
 
   .location-p {
     width: 49%;
     display: inline-block;
+    vertical-align: middle;
   }
 
 }
@@ -297,18 +294,23 @@ h2 {
   }
   .menu {
     margin: auto;
-    width: 55rem;
   }
 
-  .img-mission {
+  .mission-div {
     width: 24%;
+    margin: 0;
     display: inline-block;
-    text-align: center;
+    vertical-align: top;
   }
 
-  .text-mission {
+  .menu-div {
     width: 24%;
     display: inline-block;
+    margin: 0;
+  }
+
+  .menu {
+    margin: 0;
   }
 
 }
