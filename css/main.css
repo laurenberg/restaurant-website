@@ -133,6 +133,10 @@ footer ul {
   display: inline-block;
 }
 
+.foot-nav {
+  margin-top: 3em;
+}
+
 /*BANNER*/
 
 .img-flex {
@@ -253,7 +257,8 @@ h2 {
 }
 
 .people-d {
-  margin-top: 3em;
+  max-width: 25em;
+  margin: 1.5em auto;
 }
 
 @media only screen and (min-width: 38em) {
